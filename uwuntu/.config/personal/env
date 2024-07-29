@@ -1,15 +1,8 @@
 #!/usr/bin/env zsh
 
-# Super cool keyboard stuffs.
-# Required for x applications
 setxkbmap -option caps:ctrl_modifier
 
-export STOW_FOLDERS="bin,nvim,tmux,uwuntu,netflix,personal,i3,zsh,xkb"
-
-startMongo() {
-    sudo systemctl start mongod
-    sudo systemctl enable mongod
-}
+export STOW_FOLDERS="bin,nvim,tmux,uwuntu,sway,zsh"
 
 increaseWatchers() {
     sudo sysctl fs.inotify.max_user_watches=65536
